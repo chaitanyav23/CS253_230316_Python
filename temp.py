@@ -30,7 +30,7 @@ def main():
     if n == 0:
         print("\nStatisticsError: mean/median requires at least one data point and (sample)variance/standard deviation requires at least two data points\n")
         print("The program will now be terminated, please enter a valid value next time\n")
-        sys.exe(1)
+        sys.exit(1)
         
     array = []
     for i in range(n):
