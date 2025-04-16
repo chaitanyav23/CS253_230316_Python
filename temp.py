@@ -6,8 +6,8 @@ def analyze_temperatures(temp,n):
     m = statistics.mean(temp)
     M = statistics.median(temp)
     
-    print("\nThe Mean of the given temperature(s) is: ", m)
-    print("\nThe Median of the given temperature(s) is: ", M)
+    print(f"\nThe Mean of the given temperature(s) is: ", m)
+    print(f"\nThe Median of the given temperature(s) is: ", M)
     
     if n == 1:
         print("\nSample variance needs at least two data points to apply Bessel's correction")
@@ -18,8 +18,8 @@ def analyze_temperatures(temp,n):
     std = statistics.stdev(temp)
     var = statistics.variance(temp)
     
-    print("\nThe Sample Variance calculated using the Bessel's formula of the given temperature(s) is: ", var)
-    print("\nThe Sample Standard Deviation calculated using the sample variance of the given temperature(s) is: ", std)
+    print(f"\nThe Sample Variance calculated using the Bessel's formula of the given temperature(s) is: ", var)
+    print(f"\nThe Sample Standard Deviation calculated using the sample variance of the given temperature(s) is: ", std)
     print("\n")
 
     return    
